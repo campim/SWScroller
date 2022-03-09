@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="swscroller" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/swscroller" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Option parameters="-m music.ogg -lw 2 -sw 0.010 -sx -8.5 -w 1024 -h 768 -t archivo.txt -l" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/swscroller" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags glib-2.0`" />
+			<Add directory="/usr/include/gstreamer-1.0" />
+			<Add directory="/usr/include/glib-2.0" />
+			<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+			<Add directory="/usr/lib/x86_64-linux-gnu" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --cflags glib-2.0`" />
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="GLU" />
+			<Add library="Xxf86vm" />
+			<Add library="libgobject-2.0" />
+			<Add library="gstreamer-1.0" />
+			<Add directory="/usr/lib/x86_64-linux-gnu" />
+			<Add directory="/usr/lib/x86_64-linux-gnu/gstreamer-1.0" />
+			<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include" />
+		</Linker>
+		<Unit filename="swscroller.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
