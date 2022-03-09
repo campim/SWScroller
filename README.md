@@ -109,14 +109,25 @@ move to the folder where the application is and run this from command line :
 where :
 
 -m crazy.ogg    : plays the crazy.ogg file if present.
+
 -lw 2           : linewidth 2
+
 -sw 0.010       : scale of the font from 0.0 to 1.0f
+
 -sx 8.5         : coordinate where the text starts.
+
 -w 1024         : width of the window
+
 -h 768          : height of the window
+
 -t archivo.txt  : text file
+
 -l              : logging TRUE
+
 -i 1            : slope of the characters.
+
 -fd 0.04        : speed of the characters.
+
+
 
 
