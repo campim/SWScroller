@@ -98,3 +98,25 @@ sudo apt-get install doxygen
 and then run this command line on the same folder to create a full .HTML documentation for the software:
 
 doxygen doxygenconf.conf
+
+EXAMPLES
+========
+
+move to the folder where the application is and run this from command line :
+
+./swscroller -m crazy.ogg -lw 2 -sw 0.010 -sx -8.5 -w 1024 -h 768 -t archivo.txt -l -i 1 -fd 0.04
+
+where :
+
+-m crazy.ogg    : plays the crazy.ogg file if present.
+-lw 2           : linewidth 2
+-sw 0.010       : scale of the font from 0.0 to 1.0f
+-sx 8.5         : coordinate where the text starts.
+-w 1024         : width of the window
+-h 768          : height of the window
+-t archivo.txt  : text file
+-l              : logging TRUE
+-i 1            : slope of the characters.
+-fd 0.04        : speed of the characters.
+
+
