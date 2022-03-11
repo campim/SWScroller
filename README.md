@@ -66,7 +66,7 @@ lib glib, run this code on the command line :
 
 
 Building the application
-******************************************
+========================
 Move to the folder where the source code is and run this on command line :
 
 g++ -Wall -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -I/usr/include/gstreamer-1.0 -I/usr/lib/x86_64-linux-gnu -c swscroller.cpp -o swscroller.o
