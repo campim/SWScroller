@@ -1,6 +1,4 @@
-# Copyright (c) 2011 Daniel G. Campos
-
-               SWScroller - Simple text scroller like star wars
+# SWScroller - Simple text scroller like star wars
 
 Thank you for downloading SWScroller - Simple text scroller like star wars.
 The idea of this program is to make a simple star wars like text, adding a file for music presentation. 
@@ -46,35 +44,24 @@ Installation instructions for Debian / Ubuntu systems
 Host system must have : Freeglut, GStreamer and dependencies, and also g++  for building.
 
 
-Freeglut on Debian / Ubuntu : freeglut libraries and source code
-****************************************************************
-run this code on the command line : 
+Freeglut on Debian / Ubuntu : freeglut libraries and source code, run this code on the command line : 
 
-sudo apt-get install freeglut3 freeglut3-dev
+#### sudo apt-get install freeglut3 freeglut3-dev
 
 
+Xfree 86 (some systems need it), run this code on the command line :
 
-Xfree 86 (some systems need it)
-***************************************
-run this code on the command line :
-
-sudo apt-get install libxxf86vm-dev
+#### sudo apt-get install libxxf86vm-dev
 
 
+Gstreamer, run this code on the command line :
 
-Gstreamer 
-*****************************************
-run this code on the command line :
-
-sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+#### sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
 
 
+lib glib, run this code on the command line :
 
-lib glib
-******************************************
-run this code on the command line :
-
-sudo apt-get install libglib2.0-dev
+#### sudo apt-get install libglib2.0-dev
 
 
 
@@ -131,3 +118,4 @@ where :
 
 
 
+# Copyright (c) 2011 Daniel G. Campos
