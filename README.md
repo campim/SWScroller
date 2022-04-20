@@ -12,15 +12,13 @@ Among with this idea, is also the use of different libraries and tools for c++. 
 * Use of STL library for a simple list
 * Comment the code for doxygen documentation
 
-REQUIREMENTS
-============
+Created by Daniel G. Campos 2011.
 
-The host system must have openGL, Glut and Gstreamer libraries and all its dependencies, g++ for building.
+# REQUIREMENTS
+* GNU/ Linux system must have to run this software.
+* The host system must have openGL, FreeGlut and Gstreamer libraries and all its dependencies, g++ for building.
 
-
-LICENSING
-=========
-
+# LICENSING
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -32,17 +30,13 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 
-REPORTING BUGS
-==============
+# REPORTING BUGS
 
 please send bugs to : 4966631+campim@users.noreply.github.com
 
-
-Installation instructions for Debian / Ubuntu systems
-=====================================================
+# Installation instructions for Debian / Ubuntu systems
 
 Host system must have : Freeglut, GStreamer and dependencies, and also g++  for building.
-
 
 Freeglut on Debian / Ubuntu : freeglut libraries and source code, run this code on the command line : 
 
@@ -63,10 +57,7 @@ lib glib, run this code on the command line :
 
 #### sudo apt-get install libglib2.0-dev
 
-
-
-Building the application
-========================
+# Building the application
 Move to the folder where the source code is and run this on command line :
 
 g++ -Wall -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -g -I/usr/include/gstreamer-1.0 -I/usr/lib/x86_64-linux-gnu -c swscroller.cpp -o swscroller.o
@@ -76,8 +67,7 @@ link it :
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu/gstreamer-1.0 -L/usr/lib/x86_64-linux-gnu/glib-2.0/include -o swscroller swscroller.o  -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -lgthread-2.0 -pthread -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lglut -lGL -lGLU -lXxf86vm -lgobject-2.0 -lgstreamer-1.0
 
 
-DOCUMENTATION
-=============
+# DOCUMENTATION
 In order to create a full documentation doxygen like, you must install it:
 
 sudo apt-get install doxygen
@@ -86,9 +76,7 @@ and then run this command line on the same folder to create a full .HTML documen
 
 doxygen doxygenconf.conf
 
-EXAMPLES
-========
-
+# EXAMPLES
 move to the folder where the application is and run this from command line :
 
 ./swscroller -m crazy.ogg -lw 2 -sw 0.010 -sx -8.5 -w 1024 -h 768 -t archivo.txt -l -i 1 -fd 0.04
@@ -116,6 +104,8 @@ where :
 -fd 0.04        : speed of the characters.
 
 
+# About the author
 
+Daniel G. Campos
 
-# Copyright (c) 2011 Daniel G. Campos
+https://www.linkedin.com/in/danielcampos/
